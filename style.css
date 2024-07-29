@@ -1,0 +1,115 @@
+body{
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    text-align: center;
+}
+
+.game-container{
+    display: inline-block;
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+}
+
+#game-board{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(4,100px);
+    gap: 10px;
+}
+
+.tile{
+
+    width:100px;
+    height: 100px;
+    background: #2c2c2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.tile-2{
+    background:rgb(224, 127, 248);
+    color:rgb(255, 255, 255)
+}
+.tile-4{
+    background:rgb(214, 80, 248);
+    color:white
+}
+.tile-8{
+    background:rgb(195, 27, 236);
+    color:white
+}
+.tile-16{
+    background:rgb(144, 8, 179);
+    color:white
+}
+.tile-32{
+    background:rgb(116, 4, 190);
+    color:white
+}
+.tile-64{
+    background:rgb(89, 5, 145);
+    color:white
+}
+.tile-128{
+    background:rgb(54, 2, 88);
+    color:white
+}
+.tile-256{
+    background:rgb(28, 1, 46);
+    color:white
+}
+.tile-512{
+    background:rgb(9, 1, 46);
+    color:white
+}
+.tile-1024{
+    background:rgb(22, 3, 107);
+    color:white
+}
+.tile-2048{
+    background:rgb(34, 5, 161);
+    color:white
+}
+
+.score-container{
+    margin-top: 20px;
+    font-size: 24px;
+    color: rgb(116, 4, 190);
+
+}
+
+button#restart{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: lightblue;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button#restart:hover{
+    background-color: darkred;
+    color: black;
+}
+
+.instructions{
+    font-size: 16px;
+}
